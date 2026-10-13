@@ -1,3 +1,4 @@
+---
 services:
   database:
     container_name: db
@@ -86,3 +87,4 @@ networks:
     driver: bridge
 volumes:
   mydata:
+...
