@@ -83,8 +83,8 @@ services:
           memory: 200M
 
 networks:
-  myapp:
-    driver: overlay
+    myapp:
+      driver: overlay
 volumes:
   mydata:
 ...
