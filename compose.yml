@@ -82,7 +82,7 @@ services:
 networks:
     myapp:
       driver: overlay
-      attchable: true
+      attachable: true
 volumes:
   mydata:
 ...
