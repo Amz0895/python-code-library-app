@@ -2,7 +2,7 @@
 services:
   database:
     container_name: db
-    build: ./database/
+    build: harshav323/python-pro:db
     ports:
       - "3306:3306"
     volumes:
@@ -20,7 +20,7 @@ services:
 
   auth_service:
     container_name: auth_service
-    build: ./auth/
+    build: harshav323/python-pro:auth
     ports:
       - "5001:5001"
     networks:
@@ -36,7 +36,7 @@ services:
 
   book_service:
     container_name: book_service
-    build: ./book/
+    build: harshav323/python-pro:book
     ports:
       - "5002:5002"
     networks:
@@ -52,7 +52,7 @@ services:
 
   borrow_service:
     container_name: borrow_service
-    build: ./borrow/
+    build: harshav323/python-pro:borrow
     ports:
       - "5003:5003"
     networks:
@@ -68,7 +68,7 @@ services:
 
   frontend:
     container_name: frontend
-    build: ./
+    build: harshav323/python-pro:app
     ports:
       - "5000:5000"
     networks:
